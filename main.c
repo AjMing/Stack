@@ -1,24 +1,29 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include "linkedlist.h"
-
+#include<string.h>
+#include "stack.h"
 
 int main(int argc, char **argv){
-Lnode *head=NULL;
+  printf("Checking the parentheses in argv arguments\n");
+  int i,N,j;
+  
+  Stack s;
+  s.size=0;
+  s.top=NULL;
 
-int i,id,score;
-argv++;
-while(*argv){
-   id=atoi(*argv);
-   if(id!=0 && *(argv+1))
-      {
-      score=atoi(*(argv+1));
-    printf("Inserting %d:%d\n",id,score);
-    head=insert(head,id,score);  // แทร
-    argv+=2;
-   }
-}
-   printlist(head);
-   Find_avg(head);
+ 
+  for(i=1;i<=argc;i++){
+     for(j=0;j<strlen(argv[i]);j++){
+       /* Use stack to help with the parentheses*/
+
+
+     }
+
+
+  }
+
+
+
+
    return 0;
 }
