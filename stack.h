@@ -8,7 +8,7 @@ typedef struct {
 }Stack;
 
 typedef Stack * StackPtr;
-void push(StackPtar s, int value);
-int pop(StackPtar s);
+void push(StackPtar s, char value);
+char pop(StackPtar s);
 
 #endif
