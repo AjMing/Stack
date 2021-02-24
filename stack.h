@@ -3,7 +3,7 @@
 #define stack_h
 #include "node.h"
 typedef struct {
-	NodePtr *top;
+	NodePtr top;
 	int size;
 }Stack;
 
